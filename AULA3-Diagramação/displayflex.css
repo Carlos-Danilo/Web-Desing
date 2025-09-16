@@ -1,0 +1,31 @@
+body{
+    background-color:  rgb(34, 12, 53);
+}
+
+header, footer{
+    /* formatará os dois seletores */
+    padding: 2em;
+    margin: 2rem 0;
+    background-color:  rgb(70, 20, 67);
+    text-align: center;
+    color: wheat;
+}
+main{
+    display: flex;
+    gap: 1rem; /* ESPAÇAMENTO ENTRE ELES */
+    justify-content: center; /* center: ficam todos no centro,  */
+    
+    flex-wrap: wrap; /* permite que os cards fiquem em várias linhas */
+}
+main > section{
+    /* o sinal de '>' 
+    formatará somente as sections q tiverem dentro do main
+    (os q estiverem fora n serão formatados) */
+    background-color: white;
+    width: 20rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 0.5rem 0.5rem rgb(236, 236, 236);
+    
+}

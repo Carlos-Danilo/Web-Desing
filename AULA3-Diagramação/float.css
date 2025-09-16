@@ -1,0 +1,22 @@
+figure{
+    float: left;
+    /* permite q os elemenetos que estão abaixo fiquem ao lado (ao redor) */
+    /* se eu mudar de left para right ele fica do lado esquerdo ( nao existe center ) */
+}
+section.card-flutuante{
+    float: left;
+    border: 1px solid black;
+    padding:1em;
+    margin: 1rem;
+
+}
+footer{
+    clear: both;
+    /* o atributo clear
+    "limpa" a página
+    dos elementos 
+    flutuantes, isto é, 
+    fica embaixo*/
+
+    background-color: aquamarine;
+}
