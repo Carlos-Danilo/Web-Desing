@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    gap: 2rem;
+
+}
+section{
+    border: 1px solid black;
+    width: 15rem;
+    padding: 2rem;
+    border-radius: 10px;
+}
+section.secao5{
+    order: 3;/* o atributo de order é usado na filha, que representa a ordem que p elmento fique no conteiner, a ordem coeça no 0 da direita para esquerda  */
+}
+section.secao3{
+    order: 5;
+}
+section.secao1{
+    order: 7;
+}
+section.secao7{
+    order: 2;
+}

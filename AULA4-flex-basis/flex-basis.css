@@ -1,0 +1,20 @@
+section{
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
+    gap: 1rem; /* espaçamento entre filhos ou elementos que estão 
+    dentro do container */
+    flex-wrap: wrap; /* PARA CONSEGUIR É NECESSÁRIO COLOCAR WRAP */
+
+}
+section > h2{
+    flex-basis: 100%; /* a largura do elemento */ 
+    background-color: rgb(203, 214, 224);
+    padding: 1rem;
+}
+section > div{
+    background-color: aliceblue;
+    padding: 1rem;
+    flex-basis: 20rem;
+}
