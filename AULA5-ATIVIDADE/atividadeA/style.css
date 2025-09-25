@@ -1,0 +1,36 @@
+main{
+    
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+     grid-template-areas:
+    "a b b c"
+    "a b b d"
+    "e e e e";
+    grid-template-rows: 10rem 10em;
+
+    
+}
+section{
+    border: 1px solid black;
+}
+
+section.a{
+    grid-area: a;
+}
+
+section.b{
+    grid-area: b;
+}
+
+section.c{
+    grid-area: c;
+}
+
+section.d{
+    grid-area: d;
+}
+section.e{
+    grid-area: e;
+}
