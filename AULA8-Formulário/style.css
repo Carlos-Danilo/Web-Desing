@@ -1,0 +1,14 @@
+h1{
+    background-color: rgb(82, 53, 82);
+    border-radius: 10px;
+    text-align: center;
+}
+body{
+    background-color: rgb(129, 114, 129);
+    color: white;
+}
+label[for]{
+    display:inline-block;
+    width: 12rem;
+    vertical-align: top;
+}
