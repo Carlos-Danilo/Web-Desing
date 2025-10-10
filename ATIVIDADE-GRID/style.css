@@ -1,3 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 header{
     font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(to left, #7292A6, #224459);
+    color: white;
+    padding: 20px;
+}
+#a{
+    background-color: #2980B9;
+    color: white;
+    display: inline-block;
+    
+}
+#b{
+    background-color: #cacdcf;
+    display: inline-block;
+    padding: 30px;
+    width: 100px;
+}
+ul{
+    list-style-type: none;
+}
+
+main{}
+
+footer{
+    background-color: #224459;
+    color: white;
+    position: fixed;
+    padding: 3rem;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+
 }

@@ -8,6 +8,8 @@ body{
     color: white;
 }
 label[for]{
+    /* seleciona as marcações de label com 
+    o atributo de for definido */
     display:inline-block;
     width: 12rem;
     vertical-align: top;

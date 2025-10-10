@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- A MARCAÇAO DE META DE VIEW PORT AUXULIA NA RESPONSIVIDADE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Halloween CNAT 2025</h1>
+    </header>
+    
+    <div id="destaque">
+        <!-- PICTURE
+            1- tag para responsividade de imagens, diferente da marcaçao de figure q serve de conteiner
+            2- marcalação de source maiores em cima, podem ter varias marcaçoes de source
+            3- pode ser colocada em h1, lista...
+            4- a largura precisa estar relacionada com a largura da "imagem"
+        -->
+        <picture>
+            <source srcset="imagens/destaque-versao-web.jpg" media="(min-width:1440px)" />
+            <source srcset="imagens/destaque-versao-tablet.jpg" media="(min-width:744px)" />
+            <img src="imagens/destaque-versao-mobile.jpg" alt="Imagem de destaque...">
+        </picture>
+    </div>
+    <main>
+        <section>
+            <h2>Organizadores</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium impedit sint maxime ea tenetur, eaque eum nesciunt distinctio vitae nam? Excepturi aspernatur eveniet animi saepe quaerat. Quae eligendi veniam veritatis.</p>
+        </section>
+        <section>
+            <h2>Progamação</h2>
+            <p>Dolorem modi, consequuntur eaque eius quae earum! A unde corrupti, omnis voluptatem possimus atque recusandae iure veniam non rem inventore, quasi ex eius! Odit unde sapiente placeat consequuntur totam minus?</p>
+        </section>
+        <section>
+            <h2>Praça de alimentação</h2>
+            <p>Hic, quod reprehenderit fugiat magnam cupiditate voluptatum esse necessitatibus optio, non minus rerum unde porro consequuntur at? Voluptatibus debitis ratione placeat inventore veritatis recusandae dolor aperiam dicta deleniti. Assumenda, inventore.</p>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Aspernatur ut eos atque eveniet sed, ullam assumenda libero doloribus quos perferendis, enim nesciunt? Pariatur asperiores at praesentium nobis eligendi quam totam ullam unde, suscipit omnis dolorem aperiam aliquid sit?</p>
+        </section>
+    </main>
+</body>
+</html>
