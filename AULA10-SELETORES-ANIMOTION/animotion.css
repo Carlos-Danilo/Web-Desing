@@ -1,0 +1,27 @@
+section{
+    padding: 3rem;
+    background-color: dedede;
+    margin: 2rem;
+}
+section p{
+    animation-name:mostrar;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    /* tempo para começar a animação */
+    animation-iteration-count: infinite;/* POR FAVOR NUNCA FAZER ISSO */
+}
+/* estudar sobre microinterações */
+@keyframes mostrar{
+    /*
+        - posso usar em várias marcações
+        - é possível fragmentar em várias porcentagens
+    */
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

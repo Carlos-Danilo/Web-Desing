@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+:root{
+    /* seletor raiz onde declarwamos variaveis
+    ex: --tx-color ou --bg-color */
+    --tx-color: gray;
+    --bg-color: cornflowerblue;
+}
+
+/* DESIGN SYSTEM = sistema de padronização de formatação */
+body{
+    background-color: var(--cor-de-plano-de-fundo); /*  */
+    font-family: "Fjalla One", sans-serif;
+}
+*{
+    /* seleciona todas as marcações */
+
+}
+p.destaque{
+    /* seleciona as marcações de p com o class igual a 'destaque' */
+}
+.destaque{
+    /* seleciona todas as maracações que tiverem class= destaque */
+}
+section#principal{
+    /*seleciona a section que tem id principal que estejam */
+}
+#principal{
+
+}
+.verde.tx-laranja{
+    /* seleciona a marcação que tem os dois valores no atributo de class com valor 'verde' e 'tx-laranaja' */
+    /* <section class="verde tx-laranja"> ... </section> */
+}
+.verde .tx-laranja{
+    /* seleciona as marcações que tem a class 'tc-laranja' que estão dentro da marcação com class 'verde' */
+}
+ol, ul{
+    /* formata ol e ul */
+}
+p > b{
+    /* formata a tag de b que esta imediatamente dentro do paragrafo */
+}
+
+h2 + p{
+    background-color: rgb(255, 254, 254);
+    /* formata o paragrafo que esta imediatamente depois do h2 */
+}
+p:hover{
+    /* hover é uma subclasse do css que vai permitir o efeito de passar o mouse */
+}
+li:first-child{
+    /* seleciona o primeiro filho desse grupo */
+}
+tr:last-child{
+
+}
+tr:nth-child( 2 ){
+    /* odd- numeros impares 
+       even =numeros pares
+       numero inteiro 
+    */
+}
+img[src='face.png']{
+
+}
+input[type='radio']{
+
+}
+label[for]{
+    
+}
