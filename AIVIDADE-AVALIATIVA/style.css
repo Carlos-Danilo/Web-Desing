@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+
+p{
+    margin-top: 25px;
+}
+body{
+    background-color:  #08254F;
+    color: white;
+    justify-self: center;
+    width: 65%;
+}
+section{
+    border: 1px solid #1b4583;
+    margin: 20px;
+    padding: 2rem;
+    width: 20em;
+    
+}
+header{
+    align-items: center;
+    font-size: 25px
+}
+
+main{   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-content: center;
+
+}

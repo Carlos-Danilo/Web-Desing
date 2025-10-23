@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* margin 0 padding 0
+            no * remove todos os espaçamentos, assim fica mais fácil para eu alterar depois */
+        }
+        :root{
+            --corprinc: #08254F;
+            --corsec: #1b4583;
+        }
+        body{
+            background-color: var(--corprinc);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        main{
+
+        }
+        section{
+            max-width: 70rem;
+            /* largura maxima é mais responsiva q width */
+            /* nao faz aparecer a barra de rolagem */
+            margin: 0 auto;
+            /* o margin 0 auto define uma margem automatica entre a direta e a esquerda  */
+            /* coloca o bloco no centro */
+            display:flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            color: white;
+        }
+        section > div{
+            /* esse maior(>) vai pegar e formata as div DIRETAMENTE dentro da section  */
+            border: 1px solid var(--corsec);
+            padding: 2rem;
+            box-sizing: border-box;
+            /* o atributo de box-sizing: border-box nao altera a largura do bloco ao definir o padding(elemento/marcaçao) */
+            flex-basis: 34rem;
+            /* flex-basis é o atributo que vai trabalhar junto com  */
+        }
+        section > h2{
+            flex-basis: 100%;
+            /* permite definir a largura dentro de um flex */
+        }
+        section:first-child{
+            max-width: 100%;
+            background-color: tomato;
+            padding: 5rem;
+        }
+        section:nth-child(2){
+            position: relative;
+            top: -30px;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quia. A pariatur enim corporis alias, expedita rem, optio iste veritatis harum voluptas cupiditate? Accusantium enim architecto magni. Quis, impedit. Sed!</p>
+    </section>
+    <section>
+        <div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa quae illo voluptate repellat architecto molestiae nesciunt explicabo laborum voluptatem. Ratione tempora aliquam eum incidunt dolorem quo doloribus impedit molestias.</p>
+        </div>
+        <div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsa quae illo voluptate repellat architecto molestiae nesciunt explicabo laborum voluptatem. Ratione tempora aliquam eum incidunt dolorem quo doloribus impedit molestias.</p>
+        </div>
+    </section>
+    
+</body>
+</html>

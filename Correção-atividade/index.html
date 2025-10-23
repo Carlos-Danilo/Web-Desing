@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* margin 0 padding 0
+            no * remove todos os espaçamentos, assim fica mais fácil para eu alterar depois */
+        }
+        :root{
+            --corprinc: #08254F;
+            --corsec: #1b4583;
+        }
+        body{
+            background-color: var(--corprinc);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        main{
+
+        }
+        section{
+            max-width: 70rem;
+            /* largura maxima é mais responsiva q width */
+            /* nao faz aparecer a barra de rolagem */
+            margin: 0 auto;
+            /* o margin 0 auto define uma margem automatica entre a direta e a esquerda  */
+            /* coloca o bloco no centro */
+            display:flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            color: white;
+        }
+        section > div{
+            /* esse maior(>) vai pegar e formata as div DIRETAMENTE dentro da section  */
+            border: 1px solid var(--corsec);
+            padding: 2rem;
+            box-sizing: border-box;
+            /* o atributo de box-sizing: border-box nao altera a largura do bloco ao definir o padding(elemento/marcaçao) */
+            flex-basis: 34rem;
+            /* flex-basis é o atributo que vai trabalhar junto com  */
+        }
+        section > h2{
+            flex-basis: 100%;
+            /* permite definir a largura dentro de um flex */
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Serviços</h2>
+                <div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium minus quia eos, dignissimos nobis maiores, perspiciatis veniam ducimus rerum asperiores aliquid in dolores consequuntur officia dolor impedit, hic accusantium.</p>
+                </div>
+                <div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Labore totam eum iste cupiditate repudiandae rem consequatur tenetur. Nemo minima ipsa distinctio, quas pariatur praesentium, perspiciatis illum sit laudantium sequi magnam totam? Rem, debitis. Ex id error consectetur reiciendis?</p>
+                </div>
+                <div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Fuga laborum dolorum explicabo reprehenderit amet doloribus quisquam error, dolor hic omnis quod nostrum quia eius velit maiores vero eum recusandae excepturi blanditiis culpa aliquam ut! Quos, alias assumenda! Consequuntur!</p>
+                </div>
+                <div>
+                    <h3>Lorem ipsum</h3>
+                    <p>At, minima ab! Veritatis deleniti et odio earum facilis soluta ratione ab excepturi tempore. Optio earum aliquam ratione ad! Enim, similique nulla! Modi veritatis beatae dolorem atque eveniet? Eius, esse.</p>
+                </div>
+                <div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Et illo blanditiis facere similique vitae, molestiae officia provident perferendis assumenda sapiente recusandae. Facere impedit assumenda aut nam sequi eum id dolores similique quam quos rerum, tenetur adipisci commodi nostrum.</p>
+                </div>
+                <div>
+                    <h3>Lorem ipsum</h3>
+                    <p>Facere obcaecati animi doloremque blanditiis illum. Optio, nobis quod. Quisquam amet obcaecati facere perspiciatis, harum, quas soluta qui dolore dolores commodi dignissimos magnam corrupti inventore, aspernatur enim molestias at sit!</p>
+                </div>
+        </section>
+    </main>
+</body>
+</html>
