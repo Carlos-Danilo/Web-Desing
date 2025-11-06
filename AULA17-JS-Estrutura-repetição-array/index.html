@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <h2>Formulário de soma</h2>
+
+        <label for="n1">N1:</label>
+        <input type="text" id="n1">
+
+        <label for="n2">N2:</label>
+        <input type="text" id="n2">
+
+        <button id="somar">SOMAR</button>
+        <p id="resultado"></p>
+
+
+
+    <script>
+
+    //formulário
+
+        const somar = document.querySelector("#somar")
+        //o # seleciona a marcação com id somar, se fosse class seria . e n #
+        //const é uma variável que o valor não irá mudar
+        somar.addEventListener("click", function(e){
+            console.log("addEventListener");
+            n1 = parseInt(document.getElementById("n1").value);
+            //pegar o valor do input com id n1
+            n2 = parseInt(document.getElementById("n2").value);
+            document.getElementById("resultado").innerHTML = n1+n2;
+            //esse innerHTML esta injetando no html o valor n1 e n2
+            console.log(n1 +  n2);
+        })
+
+        //ARRAYS - lista de itens
+
+        let alunos = [7,8,6,5,4,12];
+        console.log(alunos[2]);
+        //irá exibir o número "6", porque o array começa com o índice 0
+        alunos.push(5); //adiciona
+        alunos[3] = 0;
+        delete alunos[0];
+        console.log(alunos[0]);
+        console.log(alunos.length)
+
+        let items = ["Luis", "Maria", "Felipe", "Vinícius", "Thiago"];
+        console.log(items[1]);
+
+
+
+        let emocoes = ["😎","😏","😴","🤑","🤠"];
+
+        console.log(Math.random());
+        //Math.random() - retorna um número aleatório entre 0 e 1
+        console.log(Math.floor(Math.random()));
+        //Math.floor - arredonda
+        console.log(Math.random(Math.random()*5));
+        let x = Math.floor(Math.random()*4);
+        //quando multiplica por 10, é exibido um número randômico entre 0 e 9
+        document.write(`<p>${emocoes[x]}</p>`);
+
+        //document.write('<p>'+emocoes[x]+'</p>');
+
+
+
+        //estrutura de repetição
+
+        for(item in emocoes){
+            document.write(`<p> ${emocoes[item]}</p>`);
+
+        }
+        //esse for é a sintaxe para percorrer uma array
+        for(let nfor =0 ; nfor<=5 ; nfor++){
+            console.log(nfor);
+        }
+        //esse é a sintaxe de um for padrão 
+  
+
+
+
+
+
+
+    //ESTRUTURA CONDICIONAL
+
+    let opcao = 2;
+    //let opcao = parseInt(window.prompt("Digite um número de 0 a 2"));
+    //parseInt - Converte para inteiro
+    
+    
+    switch(opcao){
+        case 0: console.log("teste 0"); break;
+        //break vai fazer com que se entra no primeiro caso ele saia do sistema
+        case 1: console.log("teste 1"); break;
+        case 2: console.log("teste 2"); break;
+        default:
+            console.log("teste default"); break
+    }
+
+
+    </script>
+</body>
+</html>
