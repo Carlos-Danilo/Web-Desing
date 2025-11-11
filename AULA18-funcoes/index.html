@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT - FUNÇÕES</title>
+</head>
+<body>
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rem rerum laboriosam, nemo quod optio hic laudantium cum labore libero maxime inventore blanditiis! Necessitatibus vero facere reiciendis sit, similique repellat!</p>
+    
+    <input type="color" id="cor">
+    <button onclick="mudarcor()">BUTTON atributo onclick</button>
+    <!-- evento dentro  da tag não é indicado, pois mistura js com html -->
+    <button id="btn2">BUTTON com eventListener</button>
+    
+
+    <input type="number" id="tamanho">
+    <button onclick="mudartamanho()"></button>
+    <button id="tam">BUTTON tamanho</button>
+    
+    
+    <script>
+        let produtos = ["lapis", "tesoura", "borracha"];
+        produtos.forEach(function(item,i,lista){
+            console.log(`Array com forEach: ${item}, ${i}, ${lista}`);
+            console.log("Array com forEach: "+item+" "+i+" "+lista);
+        })
+
+
+
+
+
+        function mudartamanho(){
+            let tam = document.getElementById("tamanho").value;
+            document.body.style.fontSize = tamanho
+            let tamanho = document.getElementById("tamanaho")
+                document.getElementById("texto").style.fontSize = tamanho
+        }
+
+        function mudarcor(){
+            let cor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = cor;
+        }
+
+        btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click", function(){
+            console.log("sss");
+            let cor = document.getElementById("cor").value;
+            /*value pega o valor do input */
+            document.getElementById("texto").style.color = cor
+        })
+
+
+        function somar(){
+            return 5+65995*895848745454+9+8+98*52;
+        }
+        console.log(somar());
+        function somar2(num1,num2){
+            return num1+num2;
+        }
+        console.log(somar2(5,7));
+        function somar3(num1,num2,num3){
+            return num1+num2+num3;
+        }
+
+        console.log(somar3(5,4,7));
+
+        function somar4(num1=9,num2=0){
+            return num1+num2;
+        }
+        console.log(somar4(7));
+        function somar5(num1, num2){
+            if(!isNaN(num1) && !isNaN(num2) ){
+                // isNaN - pergunta = não é numero?
+                // Só entra no if se for verdadeiro
+                return num1+num2;                
+            }else
+                return "Passar um número";
+        }
+        console.log(somar5(5, "aaa"));
+        console.log(somar5(5,7));
+
+
+        function borda(cor, espessura){
+            document.body.style.borderColor = cor;
+            document.body.style.borderWidth = espessura+'rem';
+            document.body.style.borderStyle = "solid";
+        }
+        borda('blue',3);
+
+        function tamanho(tam){
+            document.body.style.fontSize = tam;
+        }
+
+    </script>
+</body>
+</html>
