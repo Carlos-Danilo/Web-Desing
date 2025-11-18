@@ -16,7 +16,8 @@
 
     <script>
         
-       let lista = [];
+       let lista = ["Maria", "José", "Dani", "Caio"];
+
        function exibirLista(){
         let texto = "";
 
@@ -24,7 +25,8 @@
             texto += lista[i] + "<br>";
         }
         document.getElementById("listarNomes").innerHTML = texto;
-       }
+        
+        }
        let botao = document.getElementById("botao");
 
        botao.addEventListener("click", function(){
@@ -35,7 +37,7 @@
                 document.getElementById("nome").value = ""
             }
        });
-    
+    exibirLista()
 
     </script>
 
