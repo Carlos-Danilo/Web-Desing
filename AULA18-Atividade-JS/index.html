@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid white;
+            border-radius: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="area-botao"></div>
+
+    </button>
+
+    <script>
+        function BackgroundColor(r, g, b) {
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b} )`;
+            
+        }
+        for(let i = 0; i < 100; i++){
+            let r = Math.floor(Math.random()*255)
+            let g = Math.floor(Math.random()*255)
+            let b = Math.floor(Math.random()*255)
+
+
+            let botao = document.createElement("button")
+            botao.style.background = `rgb(${r}, ${g}, ${b})`;
+            botao.setAttribute("onclick", `BackgroundColor(${r}, ${g}, ${b})`); 
+
+            
+            document.getElementById("area-botao").appendChild(botao);
+        }
+        
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <label for="nome"> Nome: </label>
+        <input type="text" id="nome">
+        <button id="botao">Adicionar</button>
+
+        <p id="listarNomes"></p>
+
+
+    <script>
+        
+       let lista = [];
+       function exibirLista(){
+        let texto = "";
+
+        for(let i = 0; i < lista.length; i++){
+            texto += lista[i] + "<br>";
+        }
+        document.getElementById("listarNomes").innerHTML = texto;
+       }
+       let botao = document.getElementById("botao");
+
+       botao.addEventListener("click", function(){
+            let nomeDigitado = document.getElementById("nome").value;
+            if(nomeDigitado !== ""){
+                lista.push(nomeDigitado)
+                exibirLista();
+                document.getElementById("nome").value = ""
+            }
+       });
+    
+
+    </script>
+
+</body>
+</html>
