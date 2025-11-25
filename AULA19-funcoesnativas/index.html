@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="diahora">0</P>
+<script>
+let nome = "INFOWEB";
+console.log("Comprimento da string: "+nome.length);
+console.log("Posição do caracter da string: "+nome.charAt(0));
+console.log("Substitui string: "+nome.replace("INFO", "INFORMÁTICA PARA"));
+/*replace substitui */
+console.log("Divie a string: "+nome.split("O")[0]);
+console.log("Minúsculo: "+nome.toLowerCase());
+//toUpperCase()
+nome = "   INFOWEB    ";
+console.log(nome);
+console.log("Remove os espaços" + nome.trim());
+console.log("Concatena strings: "+ nome.concat(" IFRN"));
+console.log("Concatena strings: "+ nome.trim().concat(" IFRN"));
+
+/* FUNÇÕES NATIVAS PARA NÚMEROS */
+console.log("Valor de PI: "+ Math.PI);
+let num = 54.3;
+console.log("Arredonda SEMPRE para cima: "+ Math.ceil(num));
+console.log("Arredonda SEMPRE para baixo: "+ Math.floor(num));
+console.log("Arredonda padrão: "+ Math.round(num));
+console.log("Número randômico: "+Math.random())// vai de 0 a 1
+console.log("Número randômico: "+Math.random()*100);
+console.log("Potência: "+ Math.pow(2,4));
+console.log("Raiz quadrada:"+ Math.sqrt(9));
+
+
+
+/* FUNÇÕES NATIVAS COM DATAS */
+const data = new Date();
+console.log("Dia de hoje: "+ data.getDate());//numero do dia
+//pega o horario do computador do cliente
+console.log("Dia da semana: : "+ data.getDay());//dia da semana - retorna um número
+console.log("Mês: "+data.getFullYear());
+console.log(data.getHours());
+console.log(data.getMinutes());
+
+function hora(){
+    let d = new Date();
+    document.getElementById("diahora").innerHTML = d.getSeconds();
+}
+setInterval(hora,1000)
+
+
+//PASSO 1: mostra no console a data nesse formato: 25/11/2025
+//PASSO 2: mostrar no console a data nesse formato: 
+    //terça, 25/11/2025
+//PASSO 3: mostrar no parágrafo:
+    //terça, 25 de novembro de 2025 - hh:mm:ss
+
+
+
+console.log("passo 1: dd/mm//yy = "+ `${data.getDate()}/${data.getMonth()+1}/${data.getFullYear()}`);
+
+let dias = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+console.log("Passo 2: dia, dd/mm/yyyy = " +`${dias[data.getDay()]}, ${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`);
+
+
+
+
+</script>
+
+</body>
+</html>
