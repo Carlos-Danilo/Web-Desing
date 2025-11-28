@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Página 2</title>
+</head>
+<body>
+<h2>Página 2 - Verificar Senhas</h2>
+<input type="password" id="s1" placeholder="Senha">
+<input type="password" id="s2" placeholder="Confirmar Senha">
+<button onclick="verificar()">Verificar</button>
+<p id="resultado"></p>
+
+
+<script>
+function verificar() {
+const a = document.getElementById('s1').value;
+const b = document.getElementById('s2').value;
+document.getElementById('resultado').innerText = a === b ? "iguais" : "diferentes";
+}
+</script>
+</body>
+</html>

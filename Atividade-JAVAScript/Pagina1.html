@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Página 1</title>
+</head>
+
+<body>
+
+<h2>Página 1 - Tamanhos Diferentes</h2>
+<input type="text" id="texto" placeholder="Digite algo">
+<button onclick="mostrar()">Mostrar</button>
+<div id="saida"></div>
+
+
+<script>
+function mostrar() {
+const t = document.getElementById('texto').value;
+let a = "";
+for (let i = 1; i <= 5; i++) {
+a += `<p style='font-size:${i}rem'>${t}</p>`;
+}
+document.getElementById('saida').innerHTML = a;
+}
+</script>
+</body>
+</html>

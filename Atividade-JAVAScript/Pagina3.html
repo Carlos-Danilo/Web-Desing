@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Página 3</title>
+</head>
+<body>
+<h2>Página 3 - Contador</h2>
+<button onclick="add()">+</button>
+<span id="num">0</span>
+<button onclick="rem()">-</button>
+
+
+<script>
+let n = 0;
+function add() {
+n++;
+document.getElementById('num').innerText = n;
+}
+function rem() {
+n--;
+document.getElementById('num').innerText = n;
+}
+</script>
+</body>
+</html>
