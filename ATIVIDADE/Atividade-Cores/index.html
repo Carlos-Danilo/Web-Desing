@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cor Aleatória</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo">Meu Título Colorido</h1>
+
+    <script>
+        function corAleatoria() {
+            const letras = '0123456789ABCDEF';
+            let cor = '#';
+            for (let i = 0; i < 6; i++) {
+                cor += letras[Math.floor(Math.random() * 16)];
+            }
+            return cor;
+        }
+        function mudarCorTitulo() {
+            const titulo = document.getElementById('titulo');
+            titulo.style.color = corAleatoria();
+        }
+        setInterval(mudarCorTitulo, 30000);
+        mudarCorTitulo();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página dinâmica</title>
+
+    <link id="tema" rel="stylesheet" href="escuro.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Página temática</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="botoes">
+            <button onclick="trocarTema('escuro.css')">Tema Escuro</button>
+            <button onclick="trocarTema('doce.css')">com cores fortes</button>
+            <button onclick="trocarTema('minimalista.css')">Tma minimalista</button>
+        </div>
+    </div>
+
+    <script>
+        function trocarTema(arquivoCss) {
+            document.getElementById("tema").href = arquivoCss;
+        }
+    </script>
+
+</body>
+</html>
